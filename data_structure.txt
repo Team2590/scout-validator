@@ -1,0 +1,56 @@
+-- Load data from files -- 
+
+raw_scouting_data
+scout_name: varchar
+match_num: int
+robot_key: varchar
+metric_1_value: int
+metric_2_value: int
+metric_3_value: int
+... etc
+
+corrections
+corrector_name: varchar
+match_num: int
+robot_key: varchar
+metric_name: varchar
+metric_value: int
+
+-- API data -- 
+
+tba_match_data
+match_num: int
+red_1_robot_key: varchar
+red_2_robot_key: varchar
+red_3_robot_key: varchar
+blue_1_robot_key: varchar
+blue_2_robot_key: varchar
+blue_3_robot_key: varchar
+red_metric_1_total: int
+blue_metric_1_total: int
+red_metric_2_total: int
+blue_metric_2_total: int
+red_metric_3_total: int
+blue_metric_3_total: int
+... etc
+
+
+-- Initial Transforms -- 
+
+scouting_data
+scout_name: varchar
+match_num: int
+robot_key: varchar
+metric_name: varchar
+metric_value: int
+
+team_matches:
+team_key: varchar
+alliance_color: varchar
+match_num: int
+
+metric_totals:
+match_num: int
+alliance_color: varchar
+metric_name: varchar
+metric_total: int
